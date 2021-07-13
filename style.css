@@ -8,6 +8,7 @@ body{
 h2{
     font-size: 28px;
     font-weight: 700;
+    color: rgb(77, 3, 216);
 }
 /* Header style start  */
 .header-area{
@@ -74,3 +75,73 @@ h2{
     width: 100%;
 height: 256px;
  }
+
+ /* player album style end  */
+
+ /* News Video Style Start  */
+
+ .news-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+.news-title h2{
+    font-size: 2.5em;
+}
+ .news-video span{
+     margin-left: 10px;
+ }
+
+ /* Sponsor style start  */
+ .sponsor-container{
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+     width: 100%;
+     
+ }
+ .sponsor-title h2{
+     font-size: 2.5em;
+ }
+ .sponsor-icon img{
+     width: 150px;
+     height: 90px;
+     margin-left: 20px;
+ }
+
+ /* Footer style start  */
+.footer-area{
+    margin-top: 158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ .footer-banner img{
+    width: 483.87px;
+    height: 110px;
+ }
+
+ .social-icon a {
+     text-decoration: none;
+     margin-left: 14px;
+     font-size: 2em;
+     }
+
+     .social-icon a .fa-facebook, .fa-facebook-messenger {
+         color: rgb(0, 81, 255);
+     }
+
+     .social-icon a .fa-youtube{
+         color: red;
+     }
+
+     .social-icon a .fa-twitter{
+         color: rgb(14, 187, 245);
+     }
