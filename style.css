@@ -3,20 +3,33 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+   
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 h2{
     font-size: 28px;
     font-weight: 700;
-    color: rgb(77, 3, 216);
+    color: #2D25A0;
 }
 /* Header style start  */
+.header-container{
+    width: 100%;
+    height: 570px;
+    background-color: #2D25A0;
+}
+
 .header-area{
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    height: 570px;
-    background-color: rgb(77, 3, 216);
+    
+    
 }
 .header-title{
     width: 485px;
@@ -76,6 +89,7 @@ h2{
 height: 256px;
  }
 
+ 
  /* player album style end  */
 
  /* News Video Style Start  */
@@ -135,7 +149,7 @@ height: 256px;
      }
 
      .social-icon a .fa-facebook, .fa-facebook-messenger {
-         color: rgb(0, 81, 255);
+         color: rgb(24, 95, 247);
      }
 
      .social-icon a .fa-youtube{
@@ -143,5 +157,77 @@ height: 256px;
      }
 
      .social-icon a .fa-twitter{
-         color: rgb(14, 187, 245);
+         color: rgb(6, 161, 212);
      }
+
+     /* Social icon style end  */
+
+     /*-------------------------
+        Media Query style start 
+      ------------------------ */
+
+      /* styele for Mobile Device */
+
+      @media only screen and (max-width:688px) {
+          header{
+            width: 100%;
+            background-color: #2D25A0;
+          }
+        .header-container{
+            display: flex;
+            
+            width: 100%;
+            height: 695px;
+            background-color: #2D25A0;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .header-area{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            align-content:space-between ;
+            
+            width: 100%;
+          
+      }
+
+      .header-title{
+        width: 278px;
+        height: 138px;
+        margin-bottom: 50px;
+        font-size: 1.8em;
+        
+    }
+    
+    
+      .header-banner img{
+        width: 329px;
+        height: 259.17px;
+    }
+
+    .player-album{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
+        grid-column-gap: 24px;
+        justify-content: center;
+        
+    }
+    .video{
+       margin-bottom: 20px;
+    }
+
+    .sponsor-icon{
+        display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    
+   
+
+    }
+
+    
