@@ -57,12 +57,19 @@ h2{
 
 .live-button:hover{
     transform: scale(1.2);
+    transition: transform 0.7s ease-in-out;
+
 }
 
 .header-banner img{
     width: 556px;
     height: 438px;
 }
+
+.header-banner img:hover{
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 /* Header style end  */
 
 
@@ -184,7 +191,7 @@ height: 256px;
 
       /* styele for Mobile Device */
 
-      @media only screen and (max-width:480px) {
+      @media only screen and (max-width:688px) {
 
         .container{
             display: flex;
@@ -223,7 +230,7 @@ height: 256px;
         width: 250px;
         height: 138px;
         margin-bottom: 50px;
-        font-size: 1.5em;
+        font-size: 1.4em;
         
     }
     
@@ -231,6 +238,7 @@ height: 256px;
       .header-banner img{
         width: 300px;
         height: 259.17px;
+        margin-bottom: 61px;
     }
 
     .player-album{
